@@ -22,3 +22,15 @@ Content-Type: application/json
 {
     "nombre_programa": "Tecnólogo en Análisis y Desarrollo de Software"
 }
+
+
+### Listar profesiones
+GET http://localhost:8001/profesiones
+
+### Crear profesión
+POST http://localhost:8001/profesiones
+Content-Type: application/json
+
+{
+    "nombre_profesion": "Desarrollador Backend"
+}
