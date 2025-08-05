@@ -2,15 +2,16 @@
 CREATE DATABASE IF NOT EXISTS adso_1;
 USE adso_1;
 drop database adso_1;
+
 -- Tabla: programa
 CREATE TABLE programa (
-    idprograma INT PRIMARY KEY,
+    idprograma INT AUTO_INCREMENT PRIMARY KEY,
     nombre_programa VARCHAR(45)
 );
 
 -- Tabla: ficha
 CREATE TABLE ficha (
-    idficha INT PRIMARY KEY,
+    idficha INT AUTO_INCREMENT PRIMARY KEY,
     codigo VARCHAR(15),
     fecha_inicio_lectiva DATE,
     fecha_fin_lectiva DATE,
@@ -21,7 +22,7 @@ CREATE TABLE ficha (
 
 -- Tabla: aprendiz
 CREATE TABLE aprendiz (
-    idaprendiz INT PRIMARY KEY,
+    idaprendiz INT AUTO_INCREMENT PRIMARY KEY,
     nombre VARCHAR(45),
     apellido VARCHAR(45),
     email VARCHAR(80),
@@ -30,16 +31,17 @@ CREATE TABLE aprendiz (
 
 -- Tabla: instructor
 CREATE TABLE instructor (
-    idinstructor INT PRIMARY KEY,
+    idinstructor INT AUTO_INCREMENT PRIMARY KEY,
     nombre VARCHAR(45),
     apellido VARCHAR(45),
     email VARCHAR(80),
     telefono VARCHAR(15)
 );
 
+
 -- Tabla: profesion
 CREATE TABLE profesion (
-    idprofesion INT PRIMARY KEY,
+    idprofesion INT AUTO_INCREMENT PRIMARY KEY,
     nombre_profesion VARCHAR(45)
 );
 
