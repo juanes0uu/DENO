@@ -1,0 +1,13 @@
+### Listar aprendices
+GET http://localhost:8001/aprendices
+
+### Crear aprendiz
+POST http://localhost:8001/aprendices
+Content-Type: application/json
+
+{
+    "nombre": "Laura",
+    "apellido": "Gómez",
+    "email": "laura@example.com",
+    "telefono": "3111111111"
+}
