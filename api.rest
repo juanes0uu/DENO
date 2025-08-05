@@ -6,8 +6,19 @@ POST http://localhost:8001/aprendices
 Content-Type: application/json
 
 {
-    "nombre": "Laura",
+    "nombre": "Laur1a",
     "apellido": "Gómez",
     "email": "laura@example.com",
     "telefono": "3111111111"
+}
+
+### Listar programas
+GET http://localhost:8001/programas
+
+### Crear programa
+POST http://localhost:8001/programas
+Content-Type: application/json
+
+{
+    "nombre_programa": "Tecnólogo en Análisis y Desarrollo de Software"
 }
