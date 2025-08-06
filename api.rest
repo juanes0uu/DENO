@@ -12,6 +12,9 @@ Content-Type: application/json
     "telefono": "3111111111"
 }
 
+###
+POST http://localhost:8001/aprendices
+
 
 ### Listar programas
 GET http://localhost:8001/programas
@@ -24,6 +27,9 @@ Content-Type: application/json
     "nombre_programa": "Tecnólogo en Análisis y Desarrollo de Software"
 }
 
+###
+POST http://localhost:8001/programas
+
 
 ### Listar profesiones
 GET http://localhost:8001/profesiones
@@ -35,3 +41,7 @@ Content-Type: application/json
 {
     "nombre_profesion": "Desarrollador Backend"
 }
+
+
+###
+POST http://localhost:8001/profesiones
