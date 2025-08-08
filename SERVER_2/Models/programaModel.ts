@@ -7,8 +7,6 @@ interface ProgramaData {
 }
 
 //hola
-
-
 export class Programa {
     public _objPrograma: ProgramaData | null;
     public _idPrograma: number | null;
