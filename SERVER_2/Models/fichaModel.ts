@@ -12,7 +12,6 @@ interface FichaData{
 
 }
 
-
 export class Ficha{
     public _objFicha : FichaData | null;
     public _idFicha : number | null;
