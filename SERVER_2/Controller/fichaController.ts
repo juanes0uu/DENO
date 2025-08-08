@@ -68,3 +68,4 @@ export const deleteFicha = (ctx:any)=>{
     ctx.response.status = 200;
     ctx.response.body = {success:true,message: "Eliminando usuario con el id" + id};
 }
+cambiooschs
