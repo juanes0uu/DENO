@@ -45,3 +45,43 @@ Content-Type: application/json
 
 ###
 POST http://localhost:8001/profesiones
+
+
+### Listar instructores
+GET http://localhost:8001/instructores
+
+
+### Crear instructores
+POST http://localhost:8001/instructores
+Content-Type: application/json
+
+{
+    "nombre": "Nicol ",
+    "apellido": "Alarcón ",
+    "email":"nicol@gmail.com",
+    "telefono": "3223733929"
+}
+###
+POST http://localhost:8001/instructores
+
+
+### Listar ficha
+
+GET  http://localhost:8001/fichas
+
+
+### Crear ficha
+POST http://localhost:8001/fichas
+Content-Type: application/json
+
+
+{
+   "codigo": "2941294",
+   "fecha_inicio_lectiva": "14/04/2024",
+   "fecha_fin_lectiva": "23/12/2025",
+   "fecha_fin_practica": "20/06/2026"
+}
+
+###
+POST http://localhost:8001/fichas
+

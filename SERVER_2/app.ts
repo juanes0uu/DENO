@@ -2,12 +2,14 @@ import { Application, oakCors } from "./Dependencies/dependencias.ts";
 import { aprendizRouter } from "./Routes/aprendizRouter.ts";
 import { programaRouter } from "./Routes/programaRouter.ts";
 import { profesionRouter } from "./Routes/profesionRouter.ts";
+import { instructorRouter } from "./Routes/instructorRouter.ts";
+import { fichaRouter } from "./Routes/fichaRouter.ts";
 
 const app = new Application();
 
 app.use(oakCors());
 
-const routers = [aprendizRouter, programaRouter, profesionRouter];
+const routers = [aprendizRouter, programaRouter, profesionRouter, instructorRouter, fichaRouter];
 routers.forEach((router) => {
     app.use(router.routes());
     app.use(router.allowedMethods());
