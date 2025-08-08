@@ -1,11 +1,11 @@
 import {Router} from "../Dependencies/dependencias.ts";
-import {getinstructor,postInstructor} from "../Controller/instructorController.ts"
+import {getInstructores,postInstructor} from "../Controller/instructorController.ts"
 
 
 const instructorRouter = new Router();
 
 instructorRouter
-    .get("/instructores",getinstructor)
+    .get("/instructores",getInstructores)
     .post("/instructores",postInstructor)
 
 export { instructorRouter };

@@ -74,12 +74,12 @@ GET  http://localhost:8001/fichas
 POST http://localhost:8001/fichas
 Content-Type: application/json
 
-
 {
-    "codigo": "2941294",
-    "fecha_inicio_lectiva": "14/04/2024",
-    "fecha_fin_lectiva": "23/12/2025",
-    "fecha_fin_practica": "20/06/2026"
+    "codigo": "255544A",
+    "fecha_inicio_lectiva": "2025-08-10",
+    "fecha_fin_lectiva": "2026-08-10",
+    "fecha_fin_practica": "2026-12-10",
+    "programa_idprograma": 5
 }
 
 ###
