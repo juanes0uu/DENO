@@ -3,15 +3,9 @@ import { Ficha } from "../Models/fichaModel.ts";
 
 
 export const getFicha = async(ctx:Context)=>{
-<<<<<<< HEAD
     const {response} = ctx;
 
     try {
-=======
-   const {response} = ctx;
-
-   try {
->>>>>>> 7eb541e02dd75320d81710719e6342def76b25e1
 
         const objListaUsuarios = new Ficha();
         const ListaUsuarios = await objListaUsuarios.SeleccionarFichaes();
@@ -19,28 +13,16 @@ export const getFicha = async(ctx:Context)=>{
         response.body = {success:true,data:ListaUsuarios};
 
 
-<<<<<<< HEAD
     }catch(error) {
         response.status = 400;
         response.body = {success:false,message: "Error al procesar la solicitud ", errors:error};
     }
-=======
-   }catch(error) {
-        response.status = 400;
-        response.body = {success:false,message: "Error al procesar la solicitud ", errors:error};
-     }
->>>>>>> 7eb541e02dd75320d81710719e6342def76b25e1
 }
 
 export const postFicha = async (ctx:Context)=>{
     const {response,request}= ctx;
 
-<<<<<<< HEAD
     try {
-=======
-   
-     try {
->>>>>>> 7eb541e02dd75320d81710719e6342def76b25e1
         const contentLength = request.headers.get("Content-Length");//me avisa si tengo datos o no
         if (contentLength === "0"){
             response.status = 400;
@@ -59,21 +41,12 @@ export const postFicha = async (ctx:Context)=>{
 
         }
 
-<<<<<<< HEAD
         const objFicha = new Ficha(FichaData);
         const result = await objFicha.insertarFicha();
         response.status = 200;
         response.body = {
             success:true,
             body:result, 
-=======
-         const objFicha = new Ficha(FichaData);
-         const result = await objFicha.insertarFicha();
-         response.status = 200;
-         response.body = {
-             success:true,
-             body:result, 
->>>>>>> 7eb541e02dd75320d81710719e6342def76b25e1
         }
     } catch (error) {
         response.status = 400;
@@ -84,17 +57,3 @@ export const postFicha = async (ctx:Context)=>{
     }
 }
 
-<<<<<<< HEAD
-=======
-export const putFicha = (ctx:Context)=>{
-
-}
-
-export const deleteFicha = (ctx:any)=>{
-    const id = ctx.params.id;
-    console.log('Eliminando Ficha con el id: '+ id);
-    ctx.response.status = 200;
-    ctx.response.body = {success:true,message: "Eliminando usuario con el id" + id};
-}
-cambiooschs
->>>>>>> 7eb541e02dd75320d81710719e6342def76b25e1
