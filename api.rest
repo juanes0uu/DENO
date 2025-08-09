@@ -66,7 +66,6 @@ POST http://localhost:8001/instructores
 
 
 ### Listar ficha
-
 GET  http://localhost:8001/fichas
 
 
@@ -85,3 +84,17 @@ Content-Type: application/json
 ###
 POST http://localhost:8001/fichas
 
+
+
+### Listar relaciones ficha-aprendiz-instructors
+GET http://localhost:8001/ficha_aprendiz
+
+### Crear relación ficha-aprendiz-instructor
+POST http://localhost:8001/ficha_aprendiz
+Content-Type: application/json
+
+{
+    "ficha_idficha": 2,
+    "aprendiz_idaprendiz": 5,
+    "instructor_idinstructor": 3
+}

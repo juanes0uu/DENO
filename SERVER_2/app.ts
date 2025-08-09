@@ -4,12 +4,13 @@ import { programaRouter } from "./Routes/programaRouter.ts";
 import { profesionRouter } from "./Routes/profesionRouter.ts";
 import { instructorRouter } from "./Routes/instructorRouter.ts";
 import { fichaRouter } from "./Routes/fichaRouter.ts";
+import { fichaAprendizRouter } from "./Routes/fichaAprendizRouter.ts";
 
 const app = new Application();
 
 app.use(oakCors());
 
-const routers = [aprendizRouter, programaRouter, profesionRouter, instructorRouter, fichaRouter];
+const routers = [aprendizRouter, programaRouter, profesionRouter, instructorRouter, fichaRouter,   fichaAprendizRouter];
 routers.forEach((router) => {
     app.use(router.routes());
     app.use(router.allowedMethods());
